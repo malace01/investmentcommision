@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    color: var(--bodyTextColor);
+}
+
+header, footer {
+    background-color: #00477D;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
