@@ -1,0 +1,190 @@
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Intro Section */
+.intro {
+    padding: 4rem 1rem;
+    background-color: #f7f7f7;
+}
+
+.intro .cs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.intro-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Offerings Section */
+.offerings {
+    padding: 4rem 1rem;
+}
+
+.offerings .cs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offerings h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.offerings-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offering-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.offering-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.offering-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.offering-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Market Insights Section */
+.market-insights {
+    padding: 4rem 1rem;
+    background-color: #f7f7f7;
+}
+
+.market-insights .cs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.market-insights h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.insights-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.insight-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(50% - 2rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.insight-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.insight-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.insight-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Performance Reports Section */
+.performance-reports {
+    padding: 4rem 1rem;
+}
+
+.performance-reports .cs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.performance-reports h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.performance-reports p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+}
+
+.performance-reports .button {
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.performance-reports .button:hover {
+    background-color: var(--primaryDark);
+}
