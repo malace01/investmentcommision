@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Universal Investment</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+<body>
+    <div id="header-footer"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="services-1639">
+            <div class="cs-container">
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h2 class="cs-h2">Creative Solutions</h2>
+                            <p class="cs-item-text">
+                                Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                            </p>
+                        </div>
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-circle-check.svg" alt="icon" width="48" height="48">
+                    </li>
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h2 class="cs-h2">Professional Team</h2>
+                            <p class="cs-item-text">
+                                Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                            </p>
+                        </div>
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-speedometer.svg" alt="icon" width="48" height="48">
+                    </li>
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h2 class="cs-h2">Diverse Approach</h2>
+                            <p class="cs-item-text">
+                                Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                            </p>
+                        </div>
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-bouy.svg" alt="icon" width="48" height="48">
+                    </li>
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h2 class="cs-h2">Detailed Reports</h2>
+                            <p class="cs-item-text">
+                                Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                            </p>
+                        </div>
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-thumb.svg" alt="icon" width="48" height="48">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        // Load the header and footer
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-footer').innerHTML = data;
+            });
+
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

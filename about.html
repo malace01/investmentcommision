@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Universal Investment</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <div id="header-footer"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p>Welcome to Universal Investment, where we provide exceptional investment solutions.</p>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="our-mission">
+            <div class="cs-container">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p>At Universal Investment, our mission is to deliver superior investment results for our clients. We are committed to achieving this through rigorous research, innovative strategies, and a dedication to excellence.</p>
+                </div>
+                <img src="https://via.placeholder.com/800x400" alt="Our Mission">
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="our-team">
+            <div class="cs-container">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/200x200" alt="Team Member">
+                        <h3>John Doe</h3>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/200x200" alt="Team Member">
+                        <h3>Jane Smith</h3>
+                        <p>Chief Financial Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/200x200" alt="Team Member">
+                        <h3>Robert Brown</h3>
+                        <p>Chief Investment Officer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our History Section -->
+        <section class="our-history">
+            <div class="cs-container">
+                <h2>Our History</h2>
+                <p>Since our founding in 1968, Universal Investment has grown to become one of the leading investment firms. Our journey is marked by a commitment to innovation, excellence, and delivering exceptional results for our clients.</p>
+                <img src="https://via.placeholder.com/800x400" alt="Our History">
+            </div>
+        </section>
+
+       
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        // Load the header and footer
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-footer').innerHTML = data;
+            });
+
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

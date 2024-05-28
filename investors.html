@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Investors - Universal Investment</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/investors.css">
+</head>
+<body>
+    <div id="header-footer"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Institutional Investors</h1>
+                <p>Welcome to the dedicated section for our valued institutional investors.</p>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="cs-container">
+                <div class="intro-text">
+                    <h2>Our Commitment to Institutional Investors</h2>
+                    <p>At Universal Investment, we are dedicated to providing superior investment solutions and services to our institutional investors. Our comprehensive range of products and our commitment to excellence ensures that we meet the unique needs of each of our clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offerings Section -->
+        <section class="offerings">
+            <div class="cs-container">
+                <h2>Our Offerings</h2>
+                <div class="offerings-cards">
+                    <div class="offering-card">
+                        <img src="https://via.placeholder.com/800x400" alt="Investment Solutions">
+                        <h3>Investment Solutions</h3>
+                        <p>Explore our range of investment solutions designed to meet your financial goals.</p>
+                    </div>
+                    <div class="offering-card">
+                        <img src="https://via.placeholder.com/800x400" alt="Risk Management">
+                        <h3>Risk Management</h3>
+                        <p>Our risk management strategies are tailored to protect your investments.</p>
+                    </div>
+                    <div class="offering-card">
+                        <img src="https://via.placeholder.com/800x400" alt="Advisory Services">
+                        <h3>Advisory Services</h3>
+                        <p>Get expert advice and insights from our team of experienced professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Insights Section -->
+        <section class="market-insights">
+            <div class="cs-container">
+                <h2>Market Insights</h2>
+                <div class="insights-cards">
+                    <div class="insight-card">
+                        <img src="https://via.placeholder.com/800x400" alt="Insight 1">
+                        <h3>Market Analysis</h3>
+                        <p>Stay informed with our in-depth market analysis and reports.</p>
+                    </div>
+                    <div class="insight-card">
+                        <img src="https://via.placeholder.com/800x400" alt="Insight 2">
+                        <h3>Economic Trends</h3>
+                        <p>Keep up to date with the latest economic trends and forecasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Reports Section -->
+        <section class="performance-reports">
+            <div class="cs-container">
+                <h2>Performance Reports</h2>
+                <p>Access detailed reports on the performance of our investment products to make informed decisions.</p>
+                <a href="#" class="button">View Reports</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        // Load the header and footer
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-footer').innerHTML = data;
+            });
+
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

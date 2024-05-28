@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Investment</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div id="header-footer"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Universal Investment</h1>
+                <p>Your partner in asset management.</p>
+                <button class="hero-button">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured">
+            <div class="cs-container">
+                <div class="featured-item">
+                    <img src="https://via.placeholder.com/800x400" alt="Featured 1">
+                    <div class="featured-content">
+                        <h2>Our Commitment</h2>
+                        <p>Providing exceptional service and solutions to our clients.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://via.placeholder.com/800x400" alt="Featured 2">
+                    <div class="featured-content">
+                        <h2>Innovative Solutions</h2>
+                        <p>Innovative and customized solutions for every client.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="cs-container">
+                <h2>Our Services</h2>
+                <ul class="services-list">
+                    <li>
+                        <img src="https://via.placeholder.com/48" alt="Service Icon" />
+                        <h3>Creative Solutions</h3>
+                        <p>Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.</p>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/48" alt="Service Icon" />
+                        <h3>Professional Team</h3>
+                        <p>Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.</p>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/48" alt="Service Icon" />
+                        <h3>Diverse Approach</h3>
+                        <p>Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.</p>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/48" alt="Service Icon" />
+                        <h3>Detailed Reports</h3>
+                        <p>Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <div class="cs-container">
+                <h2>Latest News</h2>
+                <div class="news-cards">
+                    <article class="news-card">
+                        <img src="https://via.placeholder.com/800x400" alt="News Image">
+                        <h3>News Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://via.placeholder.com/800x400" alt="News Image">
+                        <h3>News Title 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://via.placeholder.com/800x400" alt="News Image">
+                        <h3>News Title 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+      
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        // Load the header and footer
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-footer').innerHTML = data;
+            });
+
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
