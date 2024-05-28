@@ -1,7 +1,8 @@
+/* navigation.css */
 #cs-navigation {
     width: 100%;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +17,7 @@
 }
 
 .cs-logo img {
-    height: 29px;
+    height: 40px;
 }
 
 .cs-nav {
@@ -41,70 +42,38 @@
 
 .cs-li-link {
     text-decoration: none;
-    color: #333;
-}
-
-.cs-dropdown {
-    position: relative;
-}
-
-.cs-drop-ul {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.cs-dropdown:hover .cs-drop-ul {
-    display: block;
-}
-
-.cs-drop-li {
+    color: white;
+    font-weight: bold;
     padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
-.cs-drop-li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.cs-contact-group {
-    display: flex;
-    align-items: center;
-}
-
-.cs-contact-group a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-}
-
-.cs-contact-group img {
-    margin-right: 0.5rem;
-}
-
-.cs-social {
-    display: flex;
-    align-items: center;
-}
-
-.cs-social a {
-    margin-left: 0.5rem;
-}
-
-.cs-social img {
-    height: 12px;
+.cs-li-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .cs-toggle {
     display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cs-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+.cs-line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -116,11 +85,30 @@
     }
     .cs-nav.cs-active {
         display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
     }
     .cs-ul {
         flex-direction: column;
+        align-items: center;
     }
     .cs-li {
         margin: 1rem 0;
     }
+}
+
+.cs-button-solid {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.cs-button-solid:hover {
+    background-color: var(--primaryLight);
 }

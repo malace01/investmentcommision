@@ -1,88 +1,69 @@
+/* About Page Styles */
+
+/* Hero Section */
 .hero {
-    background: url('https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/hero-about.jpg') no-repeat center center/cover;
-    height: 400px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    height: 500px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
     color: white;
-    position: relative;
 }
 
-.hero .hero-content {
-    max-width: 600px;
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
 }
 
 .hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
 }
 
-.our-mission,
-.our-team,
-.our-history,
-.contact {
-    padding: 4rem 1rem;
-    background-color: #f7f7f7;
-}
-
-.our-mission .cs-container,
-.our-team .cs-container,
-.our-history .cs-container,
-.contact .cs-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.our-mission img,
-.our-history img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.mission-content,
-.team-members,
-.history-content {
-    max-width: 800px;
+/* Our Mission, Our Team, Our History Sections */
+.our-mission, .our-team, .our-history {
+    padding: var(--section-padding);
+    background: var(--background);
     text-align: center;
 }
 
-.mission-content h2,
-.team-members h2,
-.history-content h2,
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.our-mission img, .our-history img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
 }
 
-.mission-content p,
-.history-content p,
-.contact p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.team-members {
-    display: flex;
+.our-team .cs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 
 .team-member {
-    background-color: white;
-    border-radius: 8px;
-    padding: 1rem;
-    width: calc(33.333% - 2rem);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
 }
 
 .team-member img {
@@ -92,46 +73,78 @@
 }
 
 .team-member h3 {
-    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--text-color);
 }
 
 .team-member p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    color: #555;
+    color: var(--light-text);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--background);
+    padding: var(--section-padding);
+}
+
+.contact h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--light-text);
+    margin-bottom: 2rem;
 }
 
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    text-align: left;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
     border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
 }
 
 .contact-form button {
-    background-color: var(--primary);
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary);
     color: white;
-    padding: 0.75rem;
     border: none;
     border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: var(--primaryDark);
+    background: var(--accent);
 }

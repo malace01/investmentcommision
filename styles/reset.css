@@ -1,8 +1,19 @@
-/* Reset CSS */
+/* Add reset CSS rules here */
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--background);
+    color: var(--text-color);
 }
