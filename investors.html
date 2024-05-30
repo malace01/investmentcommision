@@ -88,24 +88,10 @@
         </section>
     </main>
 
-    <div id="footer"></div>
+    <div id="footer-container"></div>
 
     <script src="scripts/script.js"></script>
-    <script>
-        // Load the header and footer
-        fetch('header-footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-footer').innerHTML = data;
-            });
-
-        fetch('header-footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-    </script>
-    <div id="footer-container"></div>
+    
 
 </body>
 </html>
