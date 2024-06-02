@@ -1,7 +1,6 @@
 :root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
-    --primaryLight: #ffba43;
+    --primary: #111d29;
+    --primaryLight: #007ACC;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
@@ -11,6 +10,10 @@
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-alt: 'Open Sans', sans-serif;
+    --transition-duration: 0.6s;
+    --transition-timing: ease-in-out;
 }
 
 body {

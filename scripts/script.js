@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(() => {
                 // Ensure the scripts are loaded after header and footer
                 initNavigation();
+                initFullscreenLogo();
             });
     }
 
@@ -99,5 +100,48 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function initFullscreenLogo() {
+        const fullscreenLogo = document.getElementById('fullscreen-logo');
+    
+        function showFullscreenLogo(callback) {
+            fullscreenLogo.style.display = 'flex';
+            fullscreenLogo.style.opacity = '1';
+            setTimeout(() => {
+                fullscreenLogo.style.opacity = '0';
+                setTimeout(() => {
+                    fullscreenLogo.style.display = 'none';
+                    callback();
+                }, 500); // Adjust the delay as needed
+            }, 1000); // Adjust the duration as needed
+        }
+    
+        // Show fullscreen logo on initial load of the home page
+        if (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html')) {
+            fullscreenLogo.style.display = 'flex';
+            setTimeout(() => {
+                showFullscreenLogo(() => {});
+            }, 0);
+        }
+    
+        // Add event listener to home link
+        const homeLink = document.querySelector('a[href="index.html"]');
+        if (homeLink) {
+            homeLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                showFullscreenLogo(() => {
+                    window.location.href = 'index.html';
+                });
+            });
+        }
+    
+        // Add event listener to other links to prevent logo transition
+        const otherLinks = document.querySelectorAll('a[href]:not([href="index.html"])');
+        otherLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.location.href = link.href;
+            });
+        });
+    }
     loadHeaderFooter();
 });
