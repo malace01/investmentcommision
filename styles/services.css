@@ -1,91 +1,107 @@
-/* Add any additional styles specific to the services.html here */
+/* Services Hero */
+.services-hero {
+  background-color: var(--primary);
+  padding: var(--sectionPadding);
+  text-align: center;
+  color: var(--bodyTextColorWhite);
+}
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #services-1639 {
-      padding: var(--sectionPadding);
-    }
-    #services-1639 .cs-container {
-      max-width: 107.5rem;
-      width: 100%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: clamp(3rem, 6vw, 4rem);
-    }
-    #services-1639 .cs-card-group {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: clamp(1rem, 2.5vw, 1.25rem);
-    }
-    #services-1639 .cs-item {
-      list-style: none;
-      width: 100%;
-      box-sizing: border-box;
-      padding: clamp(2rem, 5vw, 2.5rem);
-      background-color: rgba(255, 255, 255, 0.04);
-      display: flex;
-      grid-column: span 12;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 1.5rem;
-      position: relative;
-      z-index: 1;
-    }
-    #services-1639 .cs-item:before {
-      content: '';
-      width: 100%;
-      height: 0%;
-      background: var(--primary);
-      opacity: 1;
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: height .3s;
-    }
-    #services-1639 .cs-item:hover:before {
-      height: 100%;
-    }
-    #services-1639 .cs-item:hover .cs-icon {
-      filter: grayscale(1) brightness(1000%);
-    }
-    #services-1639 .cs-icon {
-      width: 3rem;
-      height: auto;
-    }
-    #services-1639 .cs-h2 {
-      font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-      line-height: 1.2em;
-      font-weight: 700;
-      margin: 0 0 1rem;
-      color: var(--bodyTextColorWhite);
-      text-align: inherit;
-    }
-    #services-1639 .cs-item-text {
-      font-size: clamp(0.875rem, 1.6vw, 1rem);
-      line-height: 1.5em;
-      margin: 0;
-      color: var(--bodyTextColorWhite);
-      opacity: .8;
-      text-align: inherit;
-    }
-  }
-  /* Tablet - 600px */
-  @media only screen and (min-width: 37.5rem) {
-    #services-1639 .cs-item {
-      grid-column: span 6;
-    }
-  }
-  /* Large Desktop - 1300px */
-  @media only screen and (min-width: 81.25rem) {
-    #services-1639 .cs-item {
-      grid-column: span 3;
-    }
-  }
-  
+.services-hero .cs-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.services-hero .cs-text {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Grid */
+#services-1639 {
+  padding: var(--sectionPadding);
+}
+
+#services-1639 .cs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#services-1639 .cs-card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+#services-1639 .cs-item {
+  background-color: var(--bodyTextColorWhite);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#services-1639 .cs-item:hover {
+  transform: translateY(-0.5rem);
+}
+
+#services-1639 .cs-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  margin: 0 auto 1.5rem;
+}
+
+#services-1639 .cs-icon {
+  width: 48px;
+  height: 48px;
+}
+
+#services-1639 .cs-h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--headerColor);
+}
+
+#services-1639 .cs-item-text {
+  font-size: 1.1rem;
+  color: var(--bodyTextColor);
+}
+
+/* Services CTA */
+.services-cta {
+  background-color: var(--primaryLight);
+  padding: var(--sectionPadding);
+  text-align: center;
+  color: var(--bodyTextColorWhite);
+}
+
+.services-cta .cs-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-cta .cs-text {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.services-cta .cs-button-solid {
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.services-cta .cs-button-solid:hover {
+  background-color: var(--secondaryLight);
+}

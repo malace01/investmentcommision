@@ -14,40 +14,43 @@
 </head>
 <body>
     <div id="header-container"></div>
-    <!-- Main Content -->
+
     <main>
+        <section class="contact-hero">
+            <div class="cs-container">
+                <h1 class="cs-title">Contact Us</h1>
+                <p class="cs-text">We're here to help. Get in touch with us today.</p>
+            </div>
+        </section>
+
         <section id="contact-1150">
             <div class="cs-container">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact Us</span>
-                    <h2 class="cs-title">We Love to Hear from Our Happy Customers</h2>
-                </div>
                 <div class="cs-contact-group">
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="https://via.placeholder.com/630x300">
-                        <source media="(min-width: 601px)" srcset="https://via.placeholder.com/630x300">
-                        <img loading="lazy" decoding="async" src="https://via.placeholder.com/630x300" alt="people" width="630" height="300">
+                        <source media="(max-width: 600px)" srcset="https://via.placeholder.com/600x400">
+                        <source media="(min-width: 601px)" srcset="https://via.placeholder.com/800x400">
+                        <img loading="lazy" decoding="async" src="https://via.placeholder.com/800x400" alt="Contact Us" width="800" height="400">
                     </picture>
                     <p class="cs-contact-text">
-                        There are many variations of passages of available but the majority have suffered alteration in some form, by injected randomized words even slightly believable.
+                        We value your feedback and inquiries. Our dedicated team is ready to assist you with any questions or concerns you may have. Feel free to reach out to us using the contact information provided below.
                     </p>
                     <ul class="cs-ul">
                         <li class="cs-li">
-                            <picture class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://via.placeholder.com/40" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
-                            </picture>
+                            <div class="cs-icon-wrapper">
+                                <img aria-hidden="true" src="https://via.placeholder.com/40" alt="Phone Icon" class="cs-icon" width="40" height="40" decoding="async">
+                            </div>
                             <div class="cs-flex-group">
                                 <span class="cs-header">Phone</span>
-                                <a href="tel:888-4565-789" class="cs-link">+1 (888) 4565 789</a>
+                                <a href="tel:+1-888-456-5789" class="cs-link">+1 (888) 456-5789</a>
                             </div>
                         </li>
                         <li class="cs-li">
-                            <picture class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://via.placeholder.com/40" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                            </picture>
+                            <div class="cs-icon-wrapper">
+                                <img aria-hidden="true" src="https://via.placeholder.com/40" alt="Address Icon" class="cs-icon" width="40" height="40" decoding="async">
+                            </div>
                             <div class="cs-flex-group">
                                 <span class="cs-header">Address</span>
-                                <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                                <a href="#" class="cs-link">2553 Woodbridge Lane, Boston, MA 02101</a>
                             </div>
                         </li>
                     </ul>
@@ -55,21 +58,21 @@
                 <form class="cs-form" id="cs-form-1150" name="Contact Form" method="post">
                     <label class="cs-label">
                         Name
-                        <input class="cs-input" required type="text" id="name-1150" name="name" placeholder="Name">
+                        <input class="cs-input" required type="text" id="name-1150" name="name" placeholder="Your Name">
                     </label>
-                    <label class="cs-label cs-email">
+                    <label class="cs-label">
                         Email
-                        <input class="cs-input" required type="email" id="email-1150" name="email" placeholder="Email">
+                        <input class="cs-input" required type="email" id="email-1150" name="email" placeholder="Your Email">
                     </label>
-                    <label class="cs-label cs-phone">
+                    <label class="cs-label">
                         Phone
-                        <input class="cs-input" required type="number" id="phone-1150" name="phone" placeholder="Phone">
+                        <input class="cs-input" required type="tel" id="phone-1150" name="phone" placeholder="Your Phone">
                     </label>
                     <label class="cs-label">
                         Message
-                        <textarea class="cs-input cs-textarea" required name="Message" id="message-1150" placeholder="Write message..."></textarea>
+                        <textarea class="cs-input cs-textarea" required name="message" id="message-1150" placeholder="Your Message"></textarea>
                     </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
+                    <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
                 </form>
             </div>
         </section>
@@ -92,5 +95,6 @@
     </script>
     <div id="footer-container"></div>
 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
