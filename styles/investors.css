@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--bodyTextColorWhite);
     position: relative;
 }
 
@@ -14,12 +14,12 @@
     max-width: 600px;
 }
 
-.hero h1 {
+.hero .cs-title {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero .cs-text {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -27,7 +27,7 @@
 /* Intro Section */
 .intro {
     padding: 4rem 1rem;
-    background-color: #f7f7f7;
+    background-color: var(--lightBackground);
 }
 
 .intro .cs-container {
@@ -42,14 +42,14 @@
     text-align: center;
 }
 
-.intro-text h2 {
+.intro-text .cs-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.intro-text p {
+.intro-text .cs-text {
     font-size: 1rem;
-    color: #555;
+    color: var(--bodyTextColor);
 }
 
 /* Offerings Section */
@@ -64,7 +64,7 @@
     gap: 2rem;
 }
 
-.offerings h2 {
+.offerings .cs-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -77,7 +77,7 @@
 }
 
 .offering-card {
-    background-color: white;
+    background-color: var(--bodyTextColorWhite);
     border-radius: 8px;
     padding: 1rem;
     width: calc(33.333% - 2rem);
@@ -90,20 +90,20 @@
     border-radius: 8px 8px 0 0;
 }
 
-.offering-card h3 {
+.offering-card .cs-subtitle {
     font-size: 1.25rem;
     margin: 1rem 0;
 }
 
-.offering-card p {
+.offering-card .cs-text {
     font-size: 1rem;
-    color: #555;
+    color: var(--bodyTextColor);
 }
 
 /* Market Insights Section */
 .market-insights {
     padding: 4rem 1rem;
-    background-color: #f7f7f7;
+    background-color: var(--lightBackground);
 }
 
 .market-insights .cs-container {
@@ -113,7 +113,7 @@
     gap: 2rem;
 }
 
-.market-insights h2 {
+.market-insights .cs-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -126,7 +126,7 @@
 }
 
 .insight-card {
-    background-color: white;
+    background-color: var(--bodyTextColorWhite);
     border-radius: 8px;
     padding: 1rem;
     width: calc(50% - 2rem);
@@ -139,14 +139,14 @@
     border-radius: 8px 8px 0 0;
 }
 
-.insight-card h3 {
+.insight-card .cs-subtitle {
     font-size: 1.25rem;
     margin: 1rem 0;
 }
 
-.insight-card p {
+.insight-card .cs-text {
     font-size: 1rem;
-    color: #555;
+    color: var(--bodyTextColor);
 }
 
 /* Performance Reports Section */
@@ -161,22 +161,22 @@
     gap: 2rem;
 }
 
-.performance-reports h2 {
+.performance-reports .cs-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.performance-reports p {
+.performance-reports .cs-text {
     font-size: 1rem;
-    color: #555;
+    color: var(--bodyTextColor);
     text-align: center;
     max-width: 600px;
 }
 
-.performance-reports .button {
+.performance-reports .cs-button-solid {
     padding: 1rem 2rem;
     background-color: var(--primary);
-    color: white;
+    color: var(--bodyTextColorWhite);
     border: none;
     border-radius: 4px;
     text-decoration: none;
@@ -185,6 +185,6 @@
     transition: background-color 0.3s;
 }
 
-.performance-reports .button:hover {
-    background-color: var(--primaryDark);
+.performance-reports .cs-button-solid:hover {
+    background-color: var(--primaryLight);
 }
