@@ -83,6 +83,12 @@
     width: calc(33.333% - 2rem);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .offering-card img {
@@ -132,6 +138,12 @@
     width: calc(50% - 2rem);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insight-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .insight-card img {
@@ -182,9 +194,10 @@
     text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .performance-reports .button:hover {
-    background-color: var(--primaryDark);
+    background-color: var(--primaryLight);
+    transform: scale(1.1);
 }
