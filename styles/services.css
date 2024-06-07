@@ -65,7 +65,7 @@
 #services-1639 .cs-h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: var(--headerColor);
+  color: var(--primary);
 }
 
 #services-1639 .cs-item-text {
