@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 /* Hero Section */
 .hero {
     background: url('../assets/vid/Background\ Video.mp4') no-repeat center center/cover;
@@ -63,6 +65,23 @@
     background-color: rgba(0, 0, 0, 0.5);
 
 }
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+    z-index: 9999999999; /* Ensure it's visible above other content */
+  }
+
+  .material-icons {
+    font-size: 48px; /* Icon size, adjust as needed */
+    color: #fff; /* Icon color, adjust based on your background */
+    cursor: pointer; /* Suggests to users that it's interactive */
+  }
 /* Featured Section */
 .featured {
     background: var(--background);
