@@ -39,11 +39,12 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 #services-1639 .cs-item:hover {
-  transform: translateY(-0.5rem);
+  background-color: goldenrod;
+  transform: translateY(-10px);
 }
 
 #services-1639 .cs-icon-wrapper {
@@ -84,12 +85,15 @@
 .services-cta .cs-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .services-cta .cs-text {
   font-size: 1.25rem;
   max-width: 800px;
-  margin: 0 auto 2rem;
+  padding: auto;
+  color: black;
+  /* margin: 0 auto 2rem; */
 }
 
 .services-cta .cs-button-solid {
@@ -100,6 +104,15 @@
   color: var(--primary);
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+
+.cs-button-solid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-wrap:wrap;
+
 }
 
 .services-cta .cs-button-solid:hover {
