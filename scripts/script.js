@@ -19,6 +19,34 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollIndicator = document.getElementById('scrollIndicator');
+        scrollIndicator.addEventListener('click', () => {
+            // Scrolls the page down by the height of the window
+            window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+        });
+      
+        window.addEventListener('scroll', () => {
+            const videoHeight = document.querySelector('.banner-video').offsetHeight;
+            if (window.scrollY > videoHeight) {
+                scrollIndicator.style.display = 'none'; // Hide the button
+            } else {
+                scrollIndicator.style.display = ''; // Show the button again if scrolled back up
+            }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener('scroll', function() {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (window.scrollY > 100) { // Check if scrolled more than 100px
+                scrollIndicator.classList.add('hide'); // Hide the scroll indicator
+            } else {
+                scrollIndicator.classList.remove('hide'); // Show it again if scrolled back up
+            }
+        });
+      });
+
     function initNavigation() {
         const CSbody = document.querySelector('body');
         const CSnavbarMenu = document.querySelector('#cs-navigation');

@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 /* Hero Section */
 .hero {
-    background: url('../images/jet.jpg') no-repeat center center/cover;
+    background: url('../assets/vid/Background\ Video.mp4') no-repeat center center/cover;
     height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Ensure that the video doesn't overflow the container */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +15,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+  
+  .banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Position the video absolutely within the .hero container */
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 .hero-content {
     padding: 2rem;
     z-index: 1;
@@ -41,12 +56,37 @@
     transform: scale(1.1);
 }
 
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+    z-index: 9999999999; /* Ensure it's visible above other content */
+  }
+
+  .material-icons {
+    font-size: 48px; /* Icon size, adjust as needed */
+    color: #fff; /* Icon color, adjust based on your background */
+    cursor: pointer; /* Suggests to users that it's interactive */
+  }
 /* Featured Section */
 .featured {
     background: var(--background);
     padding: var(--sectionPadding);
 }
-
 .featured-item {
     display: flex;
     flex-direction: column;
@@ -57,12 +97,32 @@
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform var(--transition-duration) var(--transition-timing), box-shadow var(--transition-duration) var(--transition-timing);
-}
-
-.featured-item:hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .featured-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-duration) var(--transition-timing);
+    z-index: -1;
+  }
+  
+  .featured-item:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+  }
+  
+  .featured-item:hover::before {
+    transform: scaleX(1);
+  }
 
 .featured-item img {
     max-width: 100%;
@@ -102,18 +162,36 @@
 
 .services-list li {
     background-color: var(--bodyTextColorWhite);
-    border-radius: 8px;
+    border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform var(--transition-duration) var(--transition-timing), box-shadow var(--transition-duration) var(--transition-timing);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow var(--transition-duration) var(--transition-timing);
     flex: 1 1 calc(25% - 2rem);
-}
-
-.services-list li:hover {
-    transform: translateY(-0.5rem);
+  }
+  
+  .services-list li::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right, transparent, rgba(255, 217, 0, 0.3), transparent);
+    transform: rotate(45deg) translateX(-50%);
+    transition: transform var(--transition-duration) var(--transition-timing);
+    z-index: -1;
+  }
+  
+  .services-list li:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+  }
+  
+  .services-list li:hover::before {
+    transform: rotate(45deg) translateX(50%);
+  }
 
 .services-list img {
     width: 48px;
@@ -159,12 +237,30 @@
     text-align: center;
     transition: transform var(--transition-duration) var(--transition-timing), box-shadow var(--transition-duration) var(--transition-timing);
     flex: 1 1 calc(33.333% - 2rem);
-}
-
-.news-card:hover {
+    position: relative;
+  }
+  
+  .news-card::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 4px solid transparent;
+    border-radius: 12px; /* Increase the border-radius */
+    transition: border-color 0.5s linear; /* Adjust the duration and timing function as desired */
+    z-index: -1; /* Ensure the pseudo-element is behind the card content */
+  }
+  
+  .news-card:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+  }
+  
+  .news-card:hover::before {
+    border-color: gold; /* Change the border color on hover */
+  }
 
 .news-card img {
     width: 100%;

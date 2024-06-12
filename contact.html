@@ -27,9 +27,7 @@
             <div class="cs-container">
                 <div class="cs-contact-group">
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="https://via.placeholder.com/600x400">
-                        <source media="(min-width: 601px)" srcset="https://via.placeholder.com/800x400">
-                        <img loading="lazy" decoding="async" src="https://via.placeholder.com/800x400" alt="Contact Us" width="800" height="400">
+                        <img loading="lazy" decoding="async" src="assets/img/Happy Employee.jpeg" alt="Contact Us" width="800" height="400">
                     </picture>
                     <p class="cs-contact-text">
                         We value your feedback and inquiries. Our dedicated team is ready to assist you with any questions or concerns you may have. Feel free to reach out to us using the contact information provided below.
@@ -37,7 +35,7 @@
                     <ul class="cs-ul">
                         <li class="cs-li">
                             <div class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://via.placeholder.com/40" alt="Phone Icon" class="cs-icon" width="40" height="40" decoding="async">
+                                <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                             </div>
                             <div class="cs-flex-group">
                                 <span class="cs-header">Phone</span>
@@ -46,7 +44,7 @@
                         </li>
                         <li class="cs-li">
                             <div class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://via.placeholder.com/40" alt="Address Icon" class="cs-icon" width="40" height="40" decoding="async">
+                                <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
                             </div>
                             <div class="cs-flex-group">
                                 <span class="cs-header">Address</span>
@@ -78,8 +76,24 @@
         </section>
     </main>
 
-    <div id="footer"></div>
+    <!-- <script src="scripts/script.js"></script> -->
+    <!-- <script>
+        // Load the header and footer
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-footer').innerHTML = data;
+            });
+
+        fetch('header-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script> -->
+    <div id="footer-container"></div>
 
     <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/c451ab5f42.js" crossorigin="anonymous"></script>
 </body>
 </html>

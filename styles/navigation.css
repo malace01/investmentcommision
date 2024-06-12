@@ -360,3 +360,38 @@ header, footer {
     max-width: 80%;
     height: auto;
 }
+
+
+.ham-menu .menu {
+    display: flex;
+    align-items: center;
+    margin: 0 -1rem;
+}
+
+.ham-menu .menu a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 6px; /* Add some space below the links */
+}
+
+.ham-menu .menu a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: gold; /* Underline color */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Position the underline at the bottom of the link */
+    transition: width 0.5s ease;
+}
+
+.ham-menu .menu a:hover {
+    color: gold; /* Change text color on hover */
+}
+
+.ham-menu .menu a:hover::after {
+    width: 100%; /* Expand the underline to 100% width on hover */
+}
